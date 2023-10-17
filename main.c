@@ -16,5 +16,6 @@ int 	main(void)
 	ptr[i] = '\0';
 	ft_memset(ptr, 'A', 3);
 	printf("%s\n", ptr);
+	
 	return (0);
 }
