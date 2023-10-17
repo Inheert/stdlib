@@ -1,11 +1,3 @@
-# Ignorer les fichiers d'environnement Python
-***/__pycache__/
-***/.pyc
-***/.pyo
-***/.pyd
-***/.db
-***/.sqlite3
-
 # Ignorer les fichiers temporaires
 ***/.tmp
 ***/.bak
