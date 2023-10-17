@@ -9,10 +9,11 @@
 /*   Updated: 2023/10/17 20:04:14 by Theo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 void	*ft_memset(void *ptr, int value, size_t size)
 {
-	register unsigned char	*_ptr;
+	unsigned char	*_ptr;
 
 	_ptr = (unsigned char *)ptr;
 	while (size-- > 0)

@@ -2,9 +2,9 @@
 ***/.tmp
 ***/.bak
 ***/.swp
+***/.o
 
 # Ajoutez ci-dessous des règles pour ignorer des fichiers personnalisés
 # Par exemple, pour ignorer un fichier nommé "exemple.txt"
 # exemple.txt
 .vscode/
-***/.o
