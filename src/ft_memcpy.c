@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Théo C. <theoclaereboudt@gmail.com>        +#+  +:+       +#+        */
+/*   By: Theo <theoclaereboudt@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/17 17:58:54 by Théo C.           #+#    #+#             */
-/*   Updated: 2023/10/17 17:58:54 by Théo C.          ###   ########.fr       */
+/*   Created: 2023/10/17 20:04:14 by Theo              #+#    #+#             */
+/*   Updated: 2023/10/17 20:04:14 by Theo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void 	*ft_memcpy(void *dest, const void *src, int size)
+void	*ft_memcpy(void *dest, const void *src, int size)
 {
-	int i;
-	char *_dest;
-	char *_src;
+	int		i;
+	char	*_dest;
+	char	*_src;
 
 	i = 0;
 	_dest = (char *)dest;

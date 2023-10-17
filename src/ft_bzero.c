@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Théo C. <theoclaereboudt@gmail.com>        +#+  +:+       +#+        */
+/*   By: Theo <theoclaereboudt@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/17 17:26:06 by Théo C.           #+#    #+#             */
-/*   Updated: 2023/10/17 17:26:06 by Théo C.          ###   ########.fr       */
+/*   Created: 2023/10/17 20:04:14 by Theo              #+#    #+#             */
+/*   Updated: 2023/10/17 20:04:14 by Theo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void 	ft_bzero(void *s, int n)
+void	ft_bzero(void *s, int n)
 {
-	int i;
-	char *ptr;
+	int		i;
+	char	*ptr;
 
 	i = 0;
 	ptr = (char *)s;
@@ -22,6 +22,5 @@ void 	ft_bzero(void *s, int n)
 		ptr[i] = '\0';
 		i++;
 	}
-
 	s = ptr;
 }
