@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Théo C. <theoclaereboudt@gmail.com>        +#+  +:+       +#+        */
+/*   By: Theo <theoclaereboudt@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/17 18:03:42 by Théo C.           #+#    #+#             */
-/*   Updated: 2023/10/17 18:03:42 by Théo C.          ###   ########.fr       */
+/*   Created: 2023/10/17 20:04:14 by Theo              #+#    #+#             */
+/*   Updated: 2023/10/17 20:04:14 by Theo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
-void *ft_memset(void *ptr, int value, size_t size)
+void	*ft_memset(void *ptr, int value, size_t size)
 {
-	register unsigned char *_ptr;
+	register unsigned char	*_ptr;
+
 	_ptr = (unsigned char *)ptr;
 	while (size-- > 0)
 	{

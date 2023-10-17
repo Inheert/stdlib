@@ -3,25 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Théo C. <theoclaereboudt@gmail.com>        +#+  +:+       +#+        */
+/*   By: Theo <theoclaereboudt@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/17 17:37:22 by Théo C.           #+#    #+#             */
-/*   Updated: 2023/10/17 17:37:22 by Théo C.          ###   ########.fr       */
+/*   Created: 2023/10/17 20:04:14 by Theo              #+#    #+#             */
+/*   Updated: 2023/10/17 20:04:14 by Theo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int n;
-	int i;
+	int	n;
+	int	i;
 
 	n = 0;
 	i = 0;
 	while (str[i])
 	{
-
 		i++;
 	}
 	return (n);
