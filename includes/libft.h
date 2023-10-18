@@ -15,10 +15,11 @@ int 	ft_tolower(int c);
 int  	ft_toupper(int c);
 int 	ft_isprint(int c);
 int 	ft_strncmp(const char *s1, const char *s2, int n);
+int     ft_strlen(char *str);
 void	ft_putchar_fd(char c, int fd);
 void 	ft_putstr_fd(char *s, int fd);
 void 	ft_bzero(void *s, size_t n);
 void 	*ft_memset(void *ptr, int value, size_t size);
-void 	*ft_memcpy(void *dest, const void *src, int size);
+void 	*ft_memcpy(void *dest, const void *src, size_t size);
 
 # endif
