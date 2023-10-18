@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 DEPS = includes
-SOURCES = main.c $(wildcard src/*.c) $(wildcard src/libs/*.c)
+SOURCES = main.c $(wildcard src/*.c)
 OBJECTS = $(SOURCES:.c=.o)
 EXECUTABLE = exec.exe
 

@@ -134,6 +134,14 @@ int	main(void)
 }
 */
 
+/* *******FT_STRCHR******** */
+
+
+int	main(void)
+{
+	printf("%s", ft_strchr("Hello", 'l'));
+	return (0);
+}
 /* *******FT_STRLEN******** */
 /*
 int	main(void)
