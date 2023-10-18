@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Theo <theoclaereboudt@gmail.com>           +#+  +:+       +#+        */
+/*   By: tclaereb <tclaereb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 20:04:14 by Theo              #+#    #+#             */
-/*   Updated: 2023/10/17 20:04:14 by Theo             ###   ########.fr       */
+/*   Updated: 2023/10/18 14:27:34 by tclaereb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *dest, const void *src, int size)
+#include "libft.h"
+
+void	*ft_memcpy(void *dest, const void *src, size_t size)
 {
-	int		i;
-	char	*_dest;
-	char	*_src;
+	size_t		i;
+	char		*_dest;
+	char		*_src;
 
 	i = 0;
 	_dest = (char *)dest;
