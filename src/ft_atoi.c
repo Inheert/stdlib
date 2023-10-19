@@ -10,16 +10,37 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_atoi(const char *str)
 {
-	int	n;
-	int	i;
+	int	num;
+	int	operator;
+	int	is_first_loop;
 
-	n = 0;
-	i = 0;
-	while (str[i])
+	num = 0;
+	operator = 1;
+	is_first_loop = 1;
+	while (*str++)
 	{
-		i++;
+		if (9 <= *str && *str <= 13 && num == 0)
+			continue;
+		else if (*str == '-')
+		{
+			if (!is_first_loop)
+				return (num * operator);
+			operator = -1;
+		}
+		else if (*str == '+')
+		{
+			if (!is_first_loop)
+				return (num * operator);
+		}
+		else if (!ft_isdigit(*str))
+			return (num * operator);
+		else
+			num = num * 10 + (*str - 48);
+		is_first_loop = 0;
 	}
-	return (n);
+	return (num * operator);
 }

@@ -1,8 +1,16 @@
-#include "libft.h"
 #include<stdio.h>
 #include <string.h>
+#include "libft.h"
 
 /* *******FT_ATOI******** */
+/*
+int	main(void)
+{
+	char	*str = "\n\v\r\f\t-0115d4\0";
+	printf("%d, %d", ft_atoi(str), atoi(str));
+	return (0);
+}
+*/
 
 /* *******FT_BZERO******** */
 /*
@@ -89,6 +97,17 @@ int	main(void)
 }
 */
 
+/* *******FT_MEMCMP******** */
+/*
+int	main(void)
+{
+	char	*s1 = "Hello";
+	char	*s2 = "HEllo";
+	printf("%d, %d", ft_memcmp(s1, s2, 2), memcmp(s1, s2, 2));
+	return (0);
+}
+*/
+
 /* *******FT_MEMCPY******** */
 /*
 int	main(void)
@@ -105,6 +124,7 @@ int	main(void)
 */
 
 /* *******FT_MEMMOVE******** */
+/*
 int	main(void)
 {
 	char	*src = "Hello Monde";
@@ -117,6 +137,7 @@ int	main(void)
 	printf("%d", strcmp(ft_memmove(dest, src, size), memmove(destt, src, size)));
 	return (0);
 }
+*/
 
 /* *******FT_MEMSET******** */
 /*
@@ -173,6 +194,36 @@ int	main(void)
 }
 */
 
+/* *******FT_STRLCAT******** */
+
+int	main(void)
+{
+	int		size = 15;
+	int		i = 0;
+	char	*src = "Hello";
+	char	*dest = (char *)malloc(size * sizeof(char));
+	
+	while (i < 10 - 1)
+		dest[i++] = 'A';
+	dest[i] = '\0';
+	printf("%lld\n%s", ft_strlcat(dest, src, 15), dest);
+	return (0);
+}
+
+
+/* *******FT_STRLCPY******** */
+/*
+int	main(void)
+{
+	int		size = 5;
+	char	*src = "Heazfazfzllo";
+	char	*dest = (char *)malloc(size * sizeof(char));
+
+	printf("%lld\n%s", ft_strlcpy(dest, src, size), dest);
+	return (0);
+}
+*/
+
 /* *******FT_STRLEN******** */
 /*
 int	main(void)
@@ -187,6 +238,28 @@ int	main(void)
 int	main(void)
 {
 	printf("%d", ft_strncmp("Hello", "Hello", 3));
+	return (0);
+}
+*/
+
+/* *******FT_STRNSTR******** */
+/*
+int	main(void)
+{
+	printf("%s", ft_strnstr("abcdeMAN", "MAN", 20));
+	return (0);
+}
+*/
+
+/* *******FT_STRRCHR******** */
+/*
+int	main(void)
+{
+	char	*src = "Hello Monde";
+	char	c = 'o';
+	printf("%s\n", strrchr(src, c));
+	printf("%s\n", ft_strrchr(src, c));
+	printf("%d", strcmp(ft_strrchr(src, c), strrchr(src, c)));
 	return (0);
 }
 */
