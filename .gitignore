@@ -2,7 +2,8 @@
 ***/.tmp
 ***/.bak
 ***/.swp
-***/.o
+***/*.o
+*.exe
 
 # Ajoutez ci-dessous des règles pour ignorer des fichiers personnalisés
 # Par exemple, pour ignorer un fichier nommé "exemple.txt"
