@@ -1,5 +1,7 @@
 #include "libft.h"
 #include<stdio.h>
+#include <string.h>
+
 /* *******FT_ATOI******** */
 
 /* *******FT_BZERO******** */
@@ -34,7 +36,7 @@ int 	main(void)
 /*
 int	main(void)
 {
-	printf("%d", ft_isalnum(']'));
+	printf("%d", ft_isalnum('a'));
 	return (0);
 }
 */
@@ -75,6 +77,18 @@ int	main(void)
 }
 */
 
+/* *******FT_MEMCHR******** */
+/*
+int	main(void)
+{
+	char	*txt = "He\0llo";
+	char	find = 'l';
+	size_t	n = 5;
+	printf("COMP: %d", strcmp(ft_memchr(txt, find, n), memchr(txt, find, n)));
+	return (0);
+}
+*/
+
 /* *******FT_MEMCPY******** */
 /*
 int	main(void)
@@ -89,6 +103,20 @@ int	main(void)
 	return (0);
 }
 */
+
+/* *******FT_MEMMOVE******** */
+int	main(void)
+{
+	char	*src = "Hello Monde";
+	int		size = 11;
+	char	*dest = (char *)malloc((size) * sizeof(char));
+	char	*destt = (char *)malloc((size) * sizeof(char));
+	if (dest == NULL || destt == NULL)
+		return (0);
+
+	printf("%d", strcmp(ft_memmove(dest, src, size), memmove(destt, src, size)));
+	return (0);
+}
 
 /* *******FT_MEMSET******** */
 /*
@@ -135,13 +163,16 @@ int	main(void)
 */
 
 /* *******FT_STRCHR******** */
-
-
+/*
 int	main(void)
 {
-	printf("%s", ft_strchr("Hello", 'l'));
+	char	*txt = "He\0llo";
+	char	find = '\0';
+	printf("\n COMP: %d", strcmp(ft_strchr(txt, find), strchr(txt, find)));
 	return (0);
 }
+*/
+
 /* *******FT_STRLEN******** */
 /*
 int	main(void)
